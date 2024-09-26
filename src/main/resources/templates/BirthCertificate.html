@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Birth Certificate</title>
+</head>
+<body>
+<h1>Birth Certificate</h1>
+<p>This is to certify that <b th:text="${name}"></b>, child of <b th:text="${fatherName}"></b> and <b th:text="${motherName}"></b>, was born on <b th:text="${birthDate}"></b> at <b th:text="${birthPlace}"></b>.</p>
+<p>Issued on <b th:text="${issueDate}"></b></p>
+</body>
+</html>

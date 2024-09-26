@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Student Report Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        h2 {
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Report Card</h2>
+
+<p><strong>Roll Number:</strong> <span th:text="${rollNum}"></span></p>
+<p><strong>Name:</strong> <span th:text="${name}"></span></p>
+
+<h3>Subjects and Grades</h3>
+
+<table>
+    <thead>
+    <tr>
+        <th>Subject</th>
+        <th>Grade</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Math</td>
+        <td th:text="${math}"></td>
+    </tr>
+    <tr>
+        <td>Physics</td>
+        <td th:text="${physics}"></td>
+    </tr>
+    <tr>
+        <td>Chemistry</td>
+        <td th:text="${che}"></td>
+    </tr>
+    <tr>
+        <td>English</td>
+        <td th:text="${english}"></td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
