@@ -72,6 +72,7 @@ public class MyReportCardController
 //            myReportCardPdf.genrateCharCert(inputRequest.getStudent(),"2");
 //            myReportCardPdf.genrateBirthcer(inputRequest.getStudent(),"3");
 
+            System.out.println("hello");
             Thread thread1 = new Thread(()->myReportCardPdf.generatePdf(inputRequest.getStudent(),"1"));
             Thread thread2 = new Thread(()-> myReportCardPdf.genrateCharCert(inputRequest.getStudent(),"2"));
             Thread thread3 = new Thread(()->myReportCardPdf.genrateBirthcer(inputRequest.getStudent(),"3"));
@@ -86,6 +87,7 @@ public class MyReportCardController
 
 
             return "PDF generated successfully!";
+
         }
     }
 
